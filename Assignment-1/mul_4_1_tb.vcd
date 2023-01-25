@@ -1,0 +1,60 @@
+$date
+	Tue Jan 24 14:32:35 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mul_4_1_tb $end
+$var wire 32 ! out [31:0] $end
+$var reg 32 " i0 [31:0] $end
+$var reg 32 # i1 [31:0] $end
+$var reg 32 $ i2 [31:0] $end
+$var reg 32 % i3 [31:0] $end
+$var reg 1 & s0 $end
+$var reg 1 ' s1 $end
+$scope module uut $end
+$var wire 32 ( i0 [31:0] $end
+$var wire 32 ) i1 [31:0] $end
+$var wire 32 * i2 [31:0] $end
+$var wire 32 + i3 [31:0] $end
+$var wire 1 & s0 $end
+$var wire 1 ' s1 $end
+$var reg 32 , out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 ,
+b1000 +
+b100 *
+b10 )
+b1 (
+0'
+0&
+b1000 %
+b100 $
+b10 #
+b1 "
+b1 !
+$end
+#1000
+b10 !
+b10 ,
+1'
+#2000
+b100 !
+b100 ,
+0'
+1&
+#3000
+b1000 !
+b1000 ,
+1'
+#4000

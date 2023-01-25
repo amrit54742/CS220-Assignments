@@ -1,0 +1,711 @@
+$date
+	Tue Jan 24 15:11:17 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module full_sub_32_tb $end
+$var wire 32 ! diff [31:0] $end
+$var wire 1 " borout $end
+$var reg 32 # a [31:0] $end
+$var reg 32 $ b [31:0] $end
+$scope module uut $end
+$var wire 32 % a [31:0] $end
+$var wire 32 & b [31:0] $end
+$var wire 32 ' diff [31:0] $end
+$var wire 33 ( borrow_temp [32:0] $end
+$var wire 1 " borout $end
+$var parameter 32 ) W $end
+$scope begin loop1[0] $end
+$var parameter 2 * i $end
+$scope module sub0 $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 - borrow $end
+$var wire 1 . c $end
+$var wire 1 / diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[1] $end
+$var parameter 2 0 i $end
+$scope module sub0 $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 3 borrow $end
+$var wire 1 4 c $end
+$var wire 1 5 diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[2] $end
+$var parameter 3 6 i $end
+$scope module sub0 $end
+$var wire 1 7 a $end
+$var wire 1 8 b $end
+$var wire 1 9 borrow $end
+$var wire 1 : c $end
+$var wire 1 ; diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[3] $end
+$var parameter 3 < i $end
+$scope module sub0 $end
+$var wire 1 = a $end
+$var wire 1 > b $end
+$var wire 1 ? borrow $end
+$var wire 1 @ c $end
+$var wire 1 A diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[4] $end
+$var parameter 4 B i $end
+$scope module sub0 $end
+$var wire 1 C a $end
+$var wire 1 D b $end
+$var wire 1 E borrow $end
+$var wire 1 F c $end
+$var wire 1 G diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[5] $end
+$var parameter 4 H i $end
+$scope module sub0 $end
+$var wire 1 I a $end
+$var wire 1 J b $end
+$var wire 1 K borrow $end
+$var wire 1 L c $end
+$var wire 1 M diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[6] $end
+$var parameter 4 N i $end
+$scope module sub0 $end
+$var wire 1 O a $end
+$var wire 1 P b $end
+$var wire 1 Q borrow $end
+$var wire 1 R c $end
+$var wire 1 S diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[7] $end
+$var parameter 4 T i $end
+$scope module sub0 $end
+$var wire 1 U a $end
+$var wire 1 V b $end
+$var wire 1 W borrow $end
+$var wire 1 X c $end
+$var wire 1 Y diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[8] $end
+$var parameter 5 Z i $end
+$scope module sub0 $end
+$var wire 1 [ a $end
+$var wire 1 \ b $end
+$var wire 1 ] borrow $end
+$var wire 1 ^ c $end
+$var wire 1 _ diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[9] $end
+$var parameter 5 ` i $end
+$scope module sub0 $end
+$var wire 1 a a $end
+$var wire 1 b b $end
+$var wire 1 c borrow $end
+$var wire 1 d c $end
+$var wire 1 e diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[10] $end
+$var parameter 5 f i $end
+$scope module sub0 $end
+$var wire 1 g a $end
+$var wire 1 h b $end
+$var wire 1 i borrow $end
+$var wire 1 j c $end
+$var wire 1 k diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[11] $end
+$var parameter 5 l i $end
+$scope module sub0 $end
+$var wire 1 m a $end
+$var wire 1 n b $end
+$var wire 1 o borrow $end
+$var wire 1 p c $end
+$var wire 1 q diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[12] $end
+$var parameter 5 r i $end
+$scope module sub0 $end
+$var wire 1 s a $end
+$var wire 1 t b $end
+$var wire 1 u borrow $end
+$var wire 1 v c $end
+$var wire 1 w diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[13] $end
+$var parameter 5 x i $end
+$scope module sub0 $end
+$var wire 1 y a $end
+$var wire 1 z b $end
+$var wire 1 { borrow $end
+$var wire 1 | c $end
+$var wire 1 } diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[14] $end
+$var parameter 5 ~ i $end
+$scope module sub0 $end
+$var wire 1 !" a $end
+$var wire 1 "" b $end
+$var wire 1 #" borrow $end
+$var wire 1 $" c $end
+$var wire 1 %" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[15] $end
+$var parameter 5 &" i $end
+$scope module sub0 $end
+$var wire 1 '" a $end
+$var wire 1 (" b $end
+$var wire 1 )" borrow $end
+$var wire 1 *" c $end
+$var wire 1 +" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[16] $end
+$var parameter 6 ," i $end
+$scope module sub0 $end
+$var wire 1 -" a $end
+$var wire 1 ." b $end
+$var wire 1 /" borrow $end
+$var wire 1 0" c $end
+$var wire 1 1" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[17] $end
+$var parameter 6 2" i $end
+$scope module sub0 $end
+$var wire 1 3" a $end
+$var wire 1 4" b $end
+$var wire 1 5" borrow $end
+$var wire 1 6" c $end
+$var wire 1 7" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[18] $end
+$var parameter 6 8" i $end
+$scope module sub0 $end
+$var wire 1 9" a $end
+$var wire 1 :" b $end
+$var wire 1 ;" borrow $end
+$var wire 1 <" c $end
+$var wire 1 =" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[19] $end
+$var parameter 6 >" i $end
+$scope module sub0 $end
+$var wire 1 ?" a $end
+$var wire 1 @" b $end
+$var wire 1 A" borrow $end
+$var wire 1 B" c $end
+$var wire 1 C" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[20] $end
+$var parameter 6 D" i $end
+$scope module sub0 $end
+$var wire 1 E" a $end
+$var wire 1 F" b $end
+$var wire 1 G" borrow $end
+$var wire 1 H" c $end
+$var wire 1 I" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[21] $end
+$var parameter 6 J" i $end
+$scope module sub0 $end
+$var wire 1 K" a $end
+$var wire 1 L" b $end
+$var wire 1 M" borrow $end
+$var wire 1 N" c $end
+$var wire 1 O" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[22] $end
+$var parameter 6 P" i $end
+$scope module sub0 $end
+$var wire 1 Q" a $end
+$var wire 1 R" b $end
+$var wire 1 S" borrow $end
+$var wire 1 T" c $end
+$var wire 1 U" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[23] $end
+$var parameter 6 V" i $end
+$scope module sub0 $end
+$var wire 1 W" a $end
+$var wire 1 X" b $end
+$var wire 1 Y" borrow $end
+$var wire 1 Z" c $end
+$var wire 1 [" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[24] $end
+$var parameter 6 \" i $end
+$scope module sub0 $end
+$var wire 1 ]" a $end
+$var wire 1 ^" b $end
+$var wire 1 _" borrow $end
+$var wire 1 `" c $end
+$var wire 1 a" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[25] $end
+$var parameter 6 b" i $end
+$scope module sub0 $end
+$var wire 1 c" a $end
+$var wire 1 d" b $end
+$var wire 1 e" borrow $end
+$var wire 1 f" c $end
+$var wire 1 g" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[26] $end
+$var parameter 6 h" i $end
+$scope module sub0 $end
+$var wire 1 i" a $end
+$var wire 1 j" b $end
+$var wire 1 k" borrow $end
+$var wire 1 l" c $end
+$var wire 1 m" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[27] $end
+$var parameter 6 n" i $end
+$scope module sub0 $end
+$var wire 1 o" a $end
+$var wire 1 p" b $end
+$var wire 1 q" borrow $end
+$var wire 1 r" c $end
+$var wire 1 s" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[28] $end
+$var parameter 6 t" i $end
+$scope module sub0 $end
+$var wire 1 u" a $end
+$var wire 1 v" b $end
+$var wire 1 w" borrow $end
+$var wire 1 x" c $end
+$var wire 1 y" diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[29] $end
+$var parameter 6 z" i $end
+$scope module sub0 $end
+$var wire 1 {" a $end
+$var wire 1 |" b $end
+$var wire 1 }" borrow $end
+$var wire 1 ~" c $end
+$var wire 1 !# diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[30] $end
+$var parameter 6 "# i $end
+$scope module sub0 $end
+$var wire 1 ## a $end
+$var wire 1 $# b $end
+$var wire 1 %# borrow $end
+$var wire 1 &# c $end
+$var wire 1 '# diff $end
+$upscope $end
+$upscope $end
+$scope begin loop1[31] $end
+$var parameter 6 (# i $end
+$scope module sub0 $end
+$var wire 1 )# a $end
+$var wire 1 *# b $end
+$var wire 1 +# borrow $end
+$var wire 1 ,# c $end
+$var wire 1 -# diff $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11111 (#
+b11110 "#
+b11101 z"
+b11100 t"
+b11011 n"
+b11010 h"
+b11001 b"
+b11000 \"
+b10111 V"
+b10110 P"
+b10101 J"
+b10100 D"
+b10011 >"
+b10010 8"
+b10001 2"
+b10000 ,"
+b1111 &"
+b1110 ~
+b1101 x
+b1100 r
+b1011 l
+b1010 f
+b1001 `
+b1000 Z
+b111 T
+b110 N
+b101 H
+b100 B
+b11 <
+b10 6
+b1 0
+b0 *
+b100000 )
+$end
+#0
+$dumpvars
+0-#
+0,#
+0+#
+0*#
+0)#
+0'#
+0&#
+0%#
+0$#
+0##
+0!#
+0~"
+0}"
+0|"
+0{"
+0y"
+0x"
+0w"
+0v"
+0u"
+0s"
+0r"
+0q"
+0p"
+0o"
+0m"
+0l"
+0k"
+0j"
+0i"
+0g"
+0f"
+0e"
+0d"
+0c"
+0a"
+0`"
+0_"
+0^"
+0]"
+0["
+0Z"
+0Y"
+0X"
+0W"
+0U"
+0T"
+0S"
+0R"
+0Q"
+0O"
+0N"
+0M"
+0L"
+0K"
+0I"
+0H"
+0G"
+0F"
+0E"
+0C"
+0B"
+0A"
+0@"
+0?"
+0="
+0<"
+0;"
+0:"
+09"
+07"
+06"
+05"
+04"
+03"
+01"
+00"
+0/"
+0."
+0-"
+0+"
+0*"
+0)"
+0("
+0'"
+0%"
+0$"
+0#"
+0""
+0!"
+0}
+0|
+0{
+0z
+0y
+0w
+0v
+0u
+0t
+0s
+0q
+0p
+0o
+0n
+0m
+0k
+0j
+0i
+0h
+0g
+0e
+0d
+0c
+0b
+0a
+0_
+0^
+0]
+0\
+0[
+0Y
+0X
+0W
+0V
+0U
+0S
+0R
+0Q
+0P
+0O
+0M
+1L
+0K
+0J
+1I
+1G
+1F
+1E
+1D
+1C
+0A
+1@
+1?
+1>
+0=
+0;
+1:
+19
+18
+07
+15
+14
+13
+02
+01
+1/
+0.
+1-
+1,
+0+
+b111110 (
+b10011 '
+b11101 &
+b110000 %
+b11101 $
+b110000 #
+0"
+b10011 !
+$end
+#1000
+1A
+b11111 !
+b11111 '
+1;
+0>
+17
+b10101 $
+b10101 &
+b110100 #
+b110100 %
+#2000
+0M
+0A
+1L
+0;
+b10011 !
+b10011 '
+1G
+b111110 (
+1E
+1>
+0D
+07
+0C
+b1101 $
+b1101 &
+b100000 #
+b100000 %
+#3000
+1M
+1A
+b101011 !
+b101011 '
+0G
+0L
+b11110 (
+0E
+0>
+1C
+b101 $
+b101 &
+b110000 #
+b110000 %
+#4000
+0M
+0A
+1S
+0Y
+0_
+b1010011 !
+b1010011 '
+1G
+1L
+b111110 (
+1E
+1>
+1D
+1V
+1\
+1O
+1U
+1[
+b110011101 $
+b110011101 &
+b111110000 #
+b111110000 %
+#5000
+1-#
+1"
+1+#
+1'#
+1,#
+1%#
+1!#
+1&#
+1}"
+1y"
+1~"
+1w"
+1s"
+1x"
+1q"
+1m"
+1r"
+1k"
+1g"
+1l"
+1e"
+1a"
+1f"
+1_"
+1["
+1`"
+1Y"
+1U"
+1Z"
+1S"
+1O"
+1T"
+1M"
+1I"
+1N"
+1G"
+1C"
+1H"
+1A"
+1="
+1B"
+1;"
+17"
+1<"
+15"
+11"
+16"
+1/"
+1+"
+10"
+1)"
+1%"
+1*"
+1#"
+1}
+1$"
+1{
+1w
+1|
+1u
+1q
+1v
+1o
+1k
+1p
+1i
+1e
+1j
+1c
+1d
+1_
+1]
+1^
+1Y
+1W
+1X
+b11111111111111111111111110010011 !
+b11111111111111111111111110010011 '
+0S
+1R
+1Q
+b111111111111111111111111111111110 (
+1K
+1J
+1P
+0I
+0O
+b111111101 $
+b111111101 &
+b110010000 #
+b110010000 %
+#6000
