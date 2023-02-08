@@ -1,0 +1,70 @@
+$date
+	Tue Feb 07 14:40:24 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Moore_type_model_tb $end
+$var wire 1 ! o_p $end
+$var reg 1 " clock $end
+$var reg 1 # i_p $end
+$var reg 1 $ reset $end
+$scope module uut $end
+$var wire 1 " clock $end
+$var wire 1 # i_p $end
+$var wire 1 $ reset $end
+$var reg 1 ! o_p $end
+$var reg 2 % state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+1$
+x#
+0"
+x!
+$end
+#20
+0!
+1"
+0#
+0$
+#40
+b1 %
+0"
+1#
+#60
+1"
+#80
+b10 %
+0"
+0#
+#100
+b0 %
+1"
+#120
+b1 %
+0"
+1#
+#140
+b10 %
+1"
+0#
+#160
+b11 %
+0"
+1#
+#180
+1!
+b10 %
+1"
+0#
+#269
