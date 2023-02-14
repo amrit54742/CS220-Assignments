@@ -1,0 +1,93 @@
+$date
+	Tue Feb 14 20:36:21 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb2 $end
+$var wire 32 ! dataout [31:0] $end
+$var reg 5 " addressa [4:0] $end
+$var reg 5 # addressb [4:0] $end
+$var reg 1 $ clk $end
+$var reg 32 % datain [31:0] $end
+$var reg 1 & mode $end
+$var reg 1 ' reset $end
+$var reg 1 ( writeEnable $end
+$scope module dut $end
+$var wire 5 ) addressa [4:0] $end
+$var wire 5 * addressb [4:0] $end
+$var wire 1 $ clk $end
+$var wire 32 + datain [31:0] $end
+$var wire 1 & mode $end
+$var wire 1 ' reset $end
+$var wire 1 ( writeEnable $end
+$var reg 32 , dataout [31:0] $end
+$var integer 32 - i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx -
+bx ,
+b101010 +
+b0 *
+b0 )
+1(
+1'
+0&
+b101010 %
+0$
+b0 #
+b0 "
+bx !
+$end
+#1000
+b101010 !
+b101010 ,
+b100000 -
+1$
+#2000
+0$
+b11111 %
+b11111 +
+b10 "
+b10 )
+0'
+#3000
+1$
+#4000
+0$
+b10 #
+b10 *
+b100100 %
+b100100 +
+1&
+#5000
+b11111 !
+b11111 ,
+1$
+#6000
+0$
+b0 #
+b0 *
+b11111 %
+b11111 +
+b0 "
+b0 )
+#7000
+b101010 !
+b101010 ,
+1$
+#8000
+0$
+#9000
+1$
+#10000
+0$
