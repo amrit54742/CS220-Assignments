@@ -228,7 +228,7 @@ module Decode(
 wire [5:0] opcode, func;
 assign opcode= Instruction[31:26];
 assign func= Instruction[5:0];
-
+// here mode=0 for jr, 1 for R-type ALU, 2 for I-type, 3 for sw, 4 for lw
   always @(opcode or func) begin
     Mode = 3'b000;
     Opcode_Data = 0;
@@ -262,19 +262,40 @@ assign func= Instruction[5:0];
     // I type instructions
     else begin
       case(opcode)
-        6'b001000: begin Opcode_ALU = 4'b0100; Mode = 3'b010; end //addi
-        6'b001001: begin Opcode_ALU = 4'b0101; Mode = 3'b010; end //addiu
-        6'b001100: begin Opcode_ALU = 4'b1000; Mode = 3'b010; end  //andi
-        6'b001101: begin Opcode_ALU = 4'b1001; Mode = 3'b010; end  //ori
-        6'b100011: begin Opcode_Data = 1'b0; Mode = 3'b100; end  //lw
-        6'b101011: begin Opcode_Data = 1'b1; Mode = 3'b011; end //sw
+        6'b001000: begin //addi
+          Opcode_ALU = 4'b0100;
+          Mode = 3'b010; 
+          end 
+        6'b001001: begin //addiu
+          Opcode_ALU = 4'b0101; 
+          Mode = 3'b010; 
+          end 
+        6'b001100: begin //andi
+          Opcode_ALU = 4'b1000; 
+          Mode = 3'b010; 
+          end  
+        6'b001101: begin //ori
+          Opcode_ALU = 4'b1001; 
+          Mode = 3'b010; 
+          end  
+        6'b101011: begin //sw
+          Opcode_Data = 1'b1; 
+          Mode = 3'b011; 
+          end 
+        6'b100011: begin //lw
+          Opcode_Data = 1'b0; 
+          Mode = 3'b100; 
+          end  
         6'b000100: Opcode_Branch = 4'b0000;  //beq
         6'b000101: Opcode_Branch = 4'b0001;  //bne
         6'b000111: Opcode_Branch = 4'b0010;  //bgt
         6'b011000: Opcode_Branch = 4'b0011;  //bgte/bge
         6'b011001: Opcode_Branch = 4'b0100;  //ble/blt
         6'b010101: Opcode_Branch = 4'b0101;  //bleq
-        6'b001010: begin Opcode_ALU = 4'b1101; Mode = 3'b010; end//slti
+        6'b001010: begin  //slti
+          Opcode_ALU = 4'b1101; 
+          Mode = 3'b010; 
+          end
       endcase
     end
   end

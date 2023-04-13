@@ -10,8 +10,8 @@ module Main_Controller(
     reg [31:0] Register [31:0]; // this my register memory to store the value of registers
   wire [31:0] Instruction; //32 bits instruction after performing fetching
   reg [9:0] PC;     //10 bits program counter (0 to 1023) 
-  wire [9:0] Next_PC, ra;       //will store our next instruction program counter 
-  
+  wire [9:0] Next_PC;       //will store our next instruction program counter 
+  wire [9:0] ra;
 
 
 
@@ -22,12 +22,7 @@ module Main_Controller(
   wire [31:0] Result, Dataout;
   wire [2:0] Mode_Type;
 
-//   instruction_fetch IF(
-//     .clk(clk), 
-//     .rst(rst), 
-//     .pc(pc), 
-//     .instruction(instruction)
-//   );
+
 wire [5:0] Opcode;
 wire [5:0] func;
 
@@ -99,8 +94,8 @@ assign Data2= Register[Instruction[20:16]];
     .Next_PC(Next_PC), 
     .ra(ra)
   );
-//   wire [15:0] Offset;
-//   assign Offset= Instruction[15:0];
+  wire [15:0] Offset;
+  assign Offset= Instruction[15:0];
 
   Store_Load I5( 
     .reset(reset), 
@@ -117,28 +112,27 @@ assign Data2= Register[Instruction[20:16]];
     PC=9'd0;
   end
 
+
   always @(negedge clk) begin
-    case(Mode_Type)
-      3'b000: begin
-        PC = Next_PC + 1;
-      end
-      3'b001: begin
-        PC = PC + 1;
-        Register[Instruction[15:11]] = Result;
-      end
-      3'b010: begin
-        PC = PC + 1;
-        Register[Instruction[20:16]] = Result;
-      end
-      3'b011: begin
-        PC = PC + 1;
-      end
-      3'b100: begin
-        PC = PC + 1;
-        Register[Instruction[20:16]] = Dataout;
-      end
-    endcase
-    $display("Register[%d]: %d Register[%d]: %d Register[%d]: %d Instruction %d PC: %d", Instruction[25:21], Register[Instruction[25:21]], Instruction[20:16], Register[Instruction[20:16]], Instruction[15:11], Register[Instruction[15:11]], Instruction,PC);
+    if(Mode_Type==3'b000)begin
+      PC = Next_PC + 1;                       // this is for Jr
+    end
+    else if(Mode_Type==3'b001)begin
+      PC = PC + 1;
+      Register[Instruction[15:11]] = Result;    // this is for  R-type
+    end
+    else if(Mode_Type==3'b010)begin
+      PC = PC + 1;                              // this is for I-type
+      Register[Instruction[20:16]] = Result;
+    end
+    else if(Mode_Type==3'b011)begin
+      PC = PC + 1;                               // this is for sw (store)
+    end
+    else if(Mode_Type==3'b100)begin
+      PC = PC + 1;
+      Register[Instruction[20:16]] = Dataout;         // this is for lw (load)
+    end
+    $display("Register[%d] value is : %d ---- Register[%d] value is: %d ---- Register[%d] value is : %d ---- Instruction value is %d ---- PC value is : %d", Instruction[25:21], Register[Instruction[25:21]], Instruction[20:16], Register[Instruction[20:16]], Instruction[15:11], Register[Instruction[15:11]], Instruction,PC);
     // $display("Datamemory %d",Data_Memory[3]);
   end
 endmodule

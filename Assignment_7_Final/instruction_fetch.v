@@ -4,23 +4,23 @@ module instruction_memory(
 	output reg [31:0] Instruction
 );
 
-	reg [31:0] Data_Memory [0:1023]; // 1024 32-bit words of memory
+	reg [31:0] Data_Memory2 [0:1023]; // 1024 32-bit words of memory
 
 	integer i;
 	initial begin
-		$readmemb("instructions.bin", Data_Memory); // Read the instructions from a hex file
+		$readmemb("instructions.bin", Data_Memory2); // Read the instructions from a hex file
 		
 		for(i=0; i<30; i = i+1) begin
-			$display("memory[%d] = %b", i, Data_Memory[i]);
+			$display("memory[%d] = %b", i, Data_Memory2[i]);
 		end
 	end
 
 	always @(posedge clk) begin
 		if (reset == 1) begin
-      $readmemb("instructions.bin", Data_Memory);
+      $readmemb("instructions.bin", Data_Memory2);
     end
 		else begin
-			Instruction = Data_Memory[Instruction_Address]; // Select the instruction at the given address
+			Instruction = Data_Memory2[Instruction_Address]; // Select the instruction at the given address
 			// $display("Values at DataMemory[%d]:---->%d", Instruction_Address, Data_Memory[Instruction_Address]);
 	  end
 	end

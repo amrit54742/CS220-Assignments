@@ -14,7 +14,7 @@ module Main_Controller_test_bench;
     initial begin
         $dumpfile("Main_Controller_test_bench.vcd");    
         $dumpvars(0, Main_Controller_test_bench);
-        #11500 $finish;    //finish the whole program after 10000
+        #15000 $finish;    //finish the whole program after 10000
     end
 
 
